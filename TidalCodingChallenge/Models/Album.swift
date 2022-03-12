@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Album: Decodable, Equatable {
+public struct Album: Codable, Equatable {
   enum CodingKeys: String, CodingKey {
     case id
     case title
@@ -40,7 +40,17 @@ public struct Album: Decodable, Equatable {
     imageURL = try container.decode(String.self, forKey: .imageURL).toURL()
     thumbnailURL = try container.decode(String.self, forKey: .thumbnailURL).toURL()
     usesExplicitLyrics = try container.decode(Bool.self, forKey: .usesExplicitLyrics)
-    releaseDate = try container.decode(String.self, forKey: .releaseDate).toReleaseDate()
+    releaseDate = try container.decode(String.self, forKey: .releaseDate).toAlbumReleaseDate()
+  }
+  
+  public func encode(to encoder: Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(id, forKey: .id)
+    try container.encode(title, forKey: .title)
+    try container.encode(imageURL?.absoluteString, forKey: .imageURL)
+    try container.encode(thumbnailURL?.absoluteString, forKey: .thumbnailURL)
+    try container.encode(usesExplicitLyrics, forKey: .usesExplicitLyrics)
+    try container.encode(releaseDate.toAlbumReleaseDate(), forKey: .releaseDate)
   }
   
   public static func ==(lhs: Album, rhs: Album) -> Bool {

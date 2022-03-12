@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SearchedAlbumResult: Decodable {
+struct SearchedAlbumResult: Codable, Equatable {
   enum CodingKeys: String, CodingKey {
     case albums = "data"
     case total
@@ -17,4 +17,10 @@ struct SearchedAlbumResult: Decodable {
   let albums: [Album]
   let total: Int
   let next: String
+  
+  static func ==(lhs: SearchedAlbumResult, rhs: SearchedAlbumResult) -> Bool {
+    return lhs.albums == rhs.albums &&
+    lhs.total == rhs.total &&
+    lhs.next == rhs.next
+  }
 }

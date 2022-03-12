@@ -28,6 +28,13 @@
 		4C42C0AE27DCCF8600E87EB3 /* SearchedArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0AD27DCCF8600E87EB3 /* SearchedArtistTests.swift */; };
 		4C42C0B227DCCFDD00E87EB3 /* SearchedAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0B127DCCFDD00E87EB3 /* SearchedAlbumTests.swift */; };
 		4C42C0B427DCCFE700E87EB3 /* SearchedTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0B327DCCFE700E87EB3 /* SearchedTrackTests.swift */; };
+		4C42C0BD27DCDA2000E87EB3 /* NetworkAPIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0BC27DCDA2000E87EB3 /* NetworkAPIAdapter.swift */; };
+		4C42C0BF27DCDA3300E87EB3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0BE27DCDA3300E87EB3 /* NetworkError.swift */; };
+		4C42C0C227DCDA9800E87EB3 /* SearchCloudService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0C127DCDA9800E87EB3 /* SearchCloudService.swift */; };
+		4C42C0C527DCDB4D00E87EB3 /* NetworkAPIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0C427DCDB4D00E87EB3 /* NetworkAPIAdapterTests.swift */; };
+		4C42C0C827DCEC7100E87EB3 /* SearchCloudServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0C727DCEC7100E87EB3 /* SearchCloudServiceTests.swift */; };
+		4C42C0CA27DCEFE000E87EB3 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0C927DCEFE000E87EB3 /* URLSessionProtocol.swift */; };
+		4C8EFF4F27DD02900085AFFA /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF4E27DD02900085AFFA /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,13 @@
 		4C42C0AD27DCCF8600E87EB3 /* SearchedArtistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedArtistTests.swift; sourceTree = "<group>"; };
 		4C42C0B127DCCFDD00E87EB3 /* SearchedAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedAlbumTests.swift; sourceTree = "<group>"; };
 		4C42C0B327DCCFE700E87EB3 /* SearchedTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTrackTests.swift; sourceTree = "<group>"; };
+		4C42C0BC27DCDA2000E87EB3 /* NetworkAPIAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIAdapter.swift; sourceTree = "<group>"; };
+		4C42C0BE27DCDA3300E87EB3 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4C42C0C127DCDA9800E87EB3 /* SearchCloudService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCloudService.swift; sourceTree = "<group>"; };
+		4C42C0C427DCDB4D00E87EB3 /* NetworkAPIAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIAdapterTests.swift; sourceTree = "<group>"; };
+		4C42C0C727DCEC7100E87EB3 /* SearchCloudServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCloudServiceTests.swift; sourceTree = "<group>"; };
+		4C42C0C927DCEFE000E87EB3 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		4C8EFF4E27DD02900085AFFA /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +140,8 @@
 				4C42C06A27DCC71700E87EB3 /* ContentView.swift */,
 				4C42C0A127DCCEB000E87EB3 /* Extensions */,
 				4C42C09227DCCCE700E87EB3 /* Models */,
+				4C42C0C027DCDA8300E87EB3 /* Services */,
+				4C42C0BB27DCD9F300E87EB3 /* Networking */,
 				4C42C0A227DCCEE600E87EB3 /* Resources */,
 			);
 			path = TidalCodingChallenge;
@@ -144,7 +160,9 @@
 			children = (
 				4C42C07927DCC71800E87EB3 /* TidalCodingChallengeTests.swift */,
 				4C42C0B027DCCFA300E87EB3 /* Extensions */,
-				4C42C0AF27DCCF8B00E87EB3 /* Models */,
+				4C42C0C627DCEC5700E87EB3 /* ServiceTests */,
+				4C42C0C327DCDB2500E87EB3 /* NetworkTests */,
+				4C42C0AF27DCCF8B00E87EB3 /* ModelsTests */,
 				4C42C0AA27DCCF3D00E87EB3 /* Resources */,
 			);
 			path = TidalCodingChallengeTests;
@@ -176,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				4C42C09927DCCD4300E87EB3 /* StringExtensions.swift */,
+				4C8EFF4E27DD02900085AFFA /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,14 +226,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4C42C0AF27DCCF8B00E87EB3 /* Models */ = {
+		4C42C0AF27DCCF8B00E87EB3 /* ModelsTests */ = {
 			isa = PBXGroup;
 			children = (
 				4C42C0AD27DCCF8600E87EB3 /* SearchedArtistTests.swift */,
 				4C42C0B127DCCFDD00E87EB3 /* SearchedAlbumTests.swift */,
 				4C42C0B327DCCFE700E87EB3 /* SearchedTrackTests.swift */,
 			);
-			path = Models;
+			path = ModelsTests;
 			sourceTree = "<group>";
 		};
 		4C42C0B027DCCFA300E87EB3 /* Extensions */ = {
@@ -223,6 +242,40 @@
 				4C42C0AB27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C42C0BB27DCD9F300E87EB3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0C927DCEFE000E87EB3 /* URLSessionProtocol.swift */,
+				4C42C0BC27DCDA2000E87EB3 /* NetworkAPIAdapter.swift */,
+				4C42C0BE27DCDA3300E87EB3 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4C42C0C027DCDA8300E87EB3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0C127DCDA9800E87EB3 /* SearchCloudService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4C42C0C327DCDB2500E87EB3 /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0C427DCDB4D00E87EB3 /* NetworkAPIAdapterTests.swift */,
+			);
+			path = NetworkTests;
+			sourceTree = "<group>";
+		};
+		4C42C0C627DCEC5700E87EB3 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0C727DCEC7100E87EB3 /* SearchCloudServiceTests.swift */,
+			);
+			path = ServiceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,11 +414,16 @@
 				4C42C09A27DCCD4300E87EB3 /* StringExtensions.swift in Sources */,
 				4C42C09C27DCCE1D00E87EB3 /* SearchedArtistResult.swift in Sources */,
 				4C42C06B27DCC71700E87EB3 /* ContentView.swift in Sources */,
+				4C42C0BD27DCDA2000E87EB3 /* NetworkAPIAdapter.swift in Sources */,
 				4C42C06927DCC71700E87EB3 /* TidalCodingChallengeApp.swift in Sources */,
+				4C42C0C227DCDA9800E87EB3 /* SearchCloudService.swift in Sources */,
 				4C42C09427DCCCF300E87EB3 /* Track.swift in Sources */,
+				4C8EFF4F27DD02900085AFFA /* DateExtensions.swift in Sources */,
 				4C42C09827DCCD2400E87EB3 /* Artist.swift in Sources */,
+				4C42C0CA27DCEFE000E87EB3 /* URLSessionProtocol.swift in Sources */,
 				4C42C0A027DCCE6D00E87EB3 /* SearchedAlbumResult.swift in Sources */,
 				4C42C09627DCCD0F00E87EB3 /* Album.swift in Sources */,
+				4C42C0BF27DCDA3300E87EB3 /* NetworkError.swift in Sources */,
 				4C42C09E27DCCE6600E87EB3 /* SearchedTrackResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,11 +432,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C42C0C827DCEC7100E87EB3 /* SearchCloudServiceTests.swift in Sources */,
 				4C42C0AC27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift in Sources */,
 				4C42C0AE27DCCF8600E87EB3 /* SearchedArtistTests.swift in Sources */,
 				4C42C0B427DCCFE700E87EB3 /* SearchedTrackTests.swift in Sources */,
 				4C42C0B227DCCFDD00E87EB3 /* SearchedAlbumTests.swift in Sources */,
 				4C42C07A27DCC71800E87EB3 /* TidalCodingChallengeTests.swift in Sources */,
+				4C42C0C527DCDB4D00E87EB3 /* NetworkAPIAdapterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
