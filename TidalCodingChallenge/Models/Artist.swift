@@ -47,3 +47,10 @@ public struct Artist: Codable, Equatable {
     return lhs.id == rhs.id
   }
 }
+
+extension Artist {
+  static var mock: Artist {
+    Artist(id: 146791, name: "Drake", imageURL: MockImageURLs.artist, thumbnailURL: MockImageURLs.artist)
+  }
+}
+

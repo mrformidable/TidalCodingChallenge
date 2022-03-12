@@ -57,3 +57,9 @@ public struct Album: Codable, Equatable {
     return lhs.id == rhs.id
   }
 }
+
+extension Album {
+  static var mock: Album {
+    Album(id: 21312, title: "Album", imageURL: MockImageURLs.album, thumbnailURL: MockImageURLs.album, usesExplicitLyrics: false, releaseDate: Date())
+  }
+}

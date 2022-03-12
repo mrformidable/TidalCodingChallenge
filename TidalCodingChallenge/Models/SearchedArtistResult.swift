@@ -28,7 +28,7 @@ struct SearchedArtistResult: Codable, Equatable {
     let container = try decoder.container(keyedBy: CodingKeys.self)
     artists = try container.decode([Artist].self, forKey: .artists)
     total = try container.decode(Int.self, forKey: .total)
-    next = try container.decode(String.self, forKey: .next)
+    next = try container.decodeIfPresent(String.self, forKey: .next) ?? ""
   }
   
   func encode(to encoder: Encoder) throws {
