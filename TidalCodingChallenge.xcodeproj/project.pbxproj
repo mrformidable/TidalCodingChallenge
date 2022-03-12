@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C42C06927DCC71700E87EB3 /* TidalCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C06827DCC71700E87EB3 /* TidalCodingChallengeApp.swift */; };
-		4C42C06B27DCC71700E87EB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C06A27DCC71700E87EB3 /* ContentView.swift */; };
 		4C42C06D27DCC71800E87EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C42C06C27DCC71800E87EB3 /* Assets.xcassets */; };
 		4C42C07027DCC71800E87EB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C42C06F27DCC71800E87EB3 /* Preview Assets.xcassets */; };
-		4C42C07A27DCC71800E87EB3 /* TidalCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C07927DCC71800E87EB3 /* TidalCodingChallengeTests.swift */; };
 		4C42C08427DCC71800E87EB3 /* TidalCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C08327DCC71800E87EB3 /* TidalCodingChallengeUITests.swift */; };
 		4C42C08627DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C08527DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift */; };
 		4C42C09427DCCCF300E87EB3 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09327DCCCF300E87EB3 /* Track.swift */; };
@@ -38,6 +36,14 @@
 		4C8EFF5127DD15DE0085AFFA /* SearchCacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF5027DD15DE0085AFFA /* SearchCacheService.swift */; };
 		4C8EFF5327DD16000085AFFA /* CacheableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF5227DD16000085AFFA /* CacheableWrapper.swift */; };
 		4C8EFF5527DD16690085AFFA /* SearchCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF5427DD16690085AFFA /* SearchCacheServiceTests.swift */; };
+		4C8EFF5927DD1CF50085AFFA /* SearchArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF5827DD1CF50085AFFA /* SearchArtistView.swift */; };
+		4C8EFF5C27DD1D520085AFFA /* SearchArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF5B27DD1D520085AFFA /* SearchArtistViewModel.swift */; };
+		4C8EFF5E27DD1D8B0085AFFA /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF5D27DD1D8B0085AFFA /* PublisherExtensions.swift */; };
+		4C8EFF6127DD1DDF0085AFFA /* SearchCloudStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF6027DD1DDF0085AFFA /* SearchCloudStub.swift */; };
+		4C8EFF6327DD1E2F0085AFFA /* SearchArtistViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF6227DD1E2F0085AFFA /* SearchArtistViewModelTests.swift */; };
+		4C8EFF6527DD1EC10085AFFA /* MockImageURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF6427DD1EC10085AFFA /* MockImageURLs.swift */; };
+		4C8EFF6727DD22B20085AFFA /* SearchArtistCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF6627DD22B20085AFFA /* SearchArtistCellView.swift */; };
+		4C8EFF6927DD294B0085AFFA /* SearchEmptyResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF6827DD294B0085AFFA /* SearchEmptyResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +66,9 @@
 /* Begin PBXFileReference section */
 		4C42C06527DCC71700E87EB3 /* TidalCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TidalCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42C06827DCC71700E87EB3 /* TidalCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalCodingChallengeApp.swift; sourceTree = "<group>"; };
-		4C42C06A27DCC71700E87EB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C42C06C27DCC71800E87EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C42C06F27DCC71800E87EB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C42C07527DCC71800E87EB3 /* TidalCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TidalCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C42C07927DCC71800E87EB3 /* TidalCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalCodingChallengeTests.swift; sourceTree = "<group>"; };
 		4C42C07F27DCC71800E87EB3 /* TidalCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TidalCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42C08327DCC71800E87EB3 /* TidalCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		4C42C08527DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalCodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 		4C8EFF5027DD15DE0085AFFA /* SearchCacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCacheService.swift; sourceTree = "<group>"; };
 		4C8EFF5227DD16000085AFFA /* CacheableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheableWrapper.swift; sourceTree = "<group>"; };
 		4C8EFF5427DD16690085AFFA /* SearchCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCacheServiceTests.swift; sourceTree = "<group>"; };
+		4C8EFF5827DD1CF50085AFFA /* SearchArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistView.swift; sourceTree = "<group>"; };
+		4C8EFF5B27DD1D520085AFFA /* SearchArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistViewModel.swift; sourceTree = "<group>"; };
+		4C8EFF5D27DD1D8B0085AFFA /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
+		4C8EFF6027DD1DDF0085AFFA /* SearchCloudStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCloudStub.swift; sourceTree = "<group>"; };
+		4C8EFF6227DD1E2F0085AFFA /* SearchArtistViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistViewModelTests.swift; sourceTree = "<group>"; };
+		4C8EFF6427DD1EC10085AFFA /* MockImageURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImageURLs.swift; sourceTree = "<group>"; };
+		4C8EFF6627DD22B20085AFFA /* SearchArtistCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArtistCellView.swift; sourceTree = "<group>"; };
+		4C8EFF6827DD294B0085AFFA /* SearchEmptyResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEmptyResultsView.swift; sourceTree = "<group>"; };
+		4C8EFF6D27DD2CD90085AFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,13 +155,15 @@
 		4C42C06727DCC71700E87EB3 /* TidalCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				4C8EFF6D27DD2CD90085AFFA /* Info.plist */,
 				4C42C0A327DCCEFB00E87EB3 /* Setup */,
-				4C42C06A27DCC71700E87EB3 /* ContentView.swift */,
-				4C8EFF5627DD1C6A0085AFFA /* Utilities */,
-				4C42C0A127DCCEB000E87EB3 /* Extensions */,
+				4C8EFF5727DD1CDD0085AFFA /* Views */,
+				4C8EFF5A27DD1D0E0085AFFA /* ViewModels */,
 				4C42C09227DCCCE700E87EB3 /* Models */,
 				4C42C0C027DCDA8300E87EB3 /* Services */,
 				4C42C0BB27DCD9F300E87EB3 /* Networking */,
+				4C42C0A127DCCEB000E87EB3 /* Extensions */,
+				4C8EFF5627DD1C6A0085AFFA /* Utilities */,
 				4C42C0A227DCCEE600E87EB3 /* Resources */,
 			);
 			path = TidalCodingChallenge;
@@ -165,11 +180,12 @@
 		4C42C07827DCC71800E87EB3 /* TidalCodingChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				4C42C07927DCC71800E87EB3 /* TidalCodingChallengeTests.swift */,
 				4C42C0B027DCCFA300E87EB3 /* Extensions */,
+				4C8EFF5F27DD1DCF0085AFFA /* Stubs */,
 				4C42C0C627DCEC5700E87EB3 /* ServiceTests */,
 				4C42C0C327DCDB2500E87EB3 /* NetworkTests */,
 				4C42C0AF27DCCF8B00E87EB3 /* ModelsTests */,
+				4C8EFF6E27DD513F0085AFFA /* ViewModelTests */,
 				4C42C0AA27DCCF3D00E87EB3 /* Resources */,
 			);
 			path = TidalCodingChallengeTests;
@@ -202,6 +218,7 @@
 			children = (
 				4C42C09927DCCD4300E87EB3 /* StringExtensions.swift */,
 				4C8EFF4E27DD02900085AFFA /* DateExtensions.swift */,
+				4C8EFF5D27DD1D8B0085AFFA /* PublisherExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,8 +308,51 @@
 			isa = PBXGroup;
 			children = (
 				4C8EFF5227DD16000085AFFA /* CacheableWrapper.swift */,
+				4C8EFF6427DD1EC10085AFFA /* MockImageURLs.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4C8EFF5727DD1CDD0085AFFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EFF6A27DD29820085AFFA /* ArtistSearch */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C8EFF5A27DD1D0E0085AFFA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EFF5B27DD1D520085AFFA /* SearchArtistViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4C8EFF5F27DD1DCF0085AFFA /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EFF6027DD1DDF0085AFFA /* SearchCloudStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		4C8EFF6A27DD29820085AFFA /* ArtistSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EFF5827DD1CF50085AFFA /* SearchArtistView.swift */,
+				4C8EFF6627DD22B20085AFFA /* SearchArtistCellView.swift */,
+				4C8EFF6827DD294B0085AFFA /* SearchEmptyResultsView.swift */,
+			);
+			path = ArtistSearch;
+			sourceTree = "<group>";
+		};
+		4C8EFF6E27DD513F0085AFFA /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C8EFF6227DD1E2F0085AFFA /* SearchArtistViewModelTests.swift */,
+			);
+			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,16 +491,21 @@
 				4C42C09A27DCCD4300E87EB3 /* StringExtensions.swift in Sources */,
 				4C42C09C27DCCE1D00E87EB3 /* SearchedArtistResult.swift in Sources */,
 				4C8EFF5127DD15DE0085AFFA /* SearchCacheService.swift in Sources */,
-				4C42C06B27DCC71700E87EB3 /* ContentView.swift in Sources */,
 				4C42C0BD27DCDA2000E87EB3 /* NetworkAPIAdapter.swift in Sources */,
+				4C8EFF6527DD1EC10085AFFA /* MockImageURLs.swift in Sources */,
 				4C42C06927DCC71700E87EB3 /* TidalCodingChallengeApp.swift in Sources */,
 				4C42C0C227DCDA9800E87EB3 /* SearchCloudService.swift in Sources */,
 				4C42C09427DCCCF300E87EB3 /* Track.swift in Sources */,
 				4C8EFF4F27DD02900085AFFA /* DateExtensions.swift in Sources */,
+				4C8EFF6727DD22B20085AFFA /* SearchArtistCellView.swift in Sources */,
 				4C42C09827DCCD2400E87EB3 /* Artist.swift in Sources */,
+				4C8EFF6927DD294B0085AFFA /* SearchEmptyResultsView.swift in Sources */,
 				4C8EFF5327DD16000085AFFA /* CacheableWrapper.swift in Sources */,
+				4C8EFF5C27DD1D520085AFFA /* SearchArtistViewModel.swift in Sources */,
 				4C42C0CA27DCEFE000E87EB3 /* URLSessionProtocol.swift in Sources */,
 				4C42C0A027DCCE6D00E87EB3 /* SearchedAlbumResult.swift in Sources */,
+				4C8EFF5927DD1CF50085AFFA /* SearchArtistView.swift in Sources */,
+				4C8EFF5E27DD1D8B0085AFFA /* PublisherExtensions.swift in Sources */,
 				4C42C09627DCCD0F00E87EB3 /* Album.swift in Sources */,
 				4C42C0BF27DCDA3300E87EB3 /* NetworkError.swift in Sources */,
 				4C42C09E27DCCE6600E87EB3 /* SearchedTrackResult.swift in Sources */,
@@ -456,8 +521,9 @@
 				4C42C0AE27DCCF8600E87EB3 /* SearchedArtistTests.swift in Sources */,
 				4C42C0B427DCCFE700E87EB3 /* SearchedTrackTests.swift in Sources */,
 				4C42C0B227DCCFDD00E87EB3 /* SearchedAlbumTests.swift in Sources */,
-				4C42C07A27DCC71800E87EB3 /* TidalCodingChallengeTests.swift in Sources */,
+				4C8EFF6327DD1E2F0085AFFA /* SearchArtistViewModelTests.swift in Sources */,
 				4C8EFF5527DD16690085AFFA /* SearchCacheServiceTests.swift in Sources */,
+				4C8EFF6127DD1DDF0085AFFA /* SearchCloudStub.swift in Sources */,
 				4C42C0C527DCDB4D00E87EB3 /* NetworkAPIAdapterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +680,7 @@
 				DEVELOPMENT_TEAM = 38DEJUL48H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TidalCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -643,6 +710,7 @@
 				DEVELOPMENT_TEAM = 38DEJUL48H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TidalCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
