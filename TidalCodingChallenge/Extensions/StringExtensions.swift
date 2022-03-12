@@ -12,7 +12,7 @@ extension String {
     URL(string: self)
   }
   
-  func toReleaseDate() -> Date {
-    return DateFormatter().date(from: self) ?? Date()
+  func toAlbumReleaseDate() -> Date {
+    DateFormatter().date(from: self) ?? Date()
   }
 }

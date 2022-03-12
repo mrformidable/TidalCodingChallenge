@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Artist: Decodable, Equatable {
+public struct Artist: Codable, Equatable {
   enum CodingKeys: String, CodingKey {
     case id
     case name
@@ -33,6 +33,14 @@ public struct Artist: Decodable, Equatable {
     name = try container.decode(String.self, forKey: .name)
     imageURL = try container.decode(String.self, forKey: .imageURL).toURL()
     thumbnailURL = try container.decode(String.self, forKey: .thumbnailURL).toURL()
+  }
+  
+  public func encode(to encoder: Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(id, forKey: .id)
+    try container.encode(name, forKey: .name)
+    try container.encode(imageURL?.absoluteString, forKey: .imageURL)
+    try container.encode(thumbnailURL?.absoluteString, forKey: .thumbnailURL)
   }
   
   public static func ==(lhs: Artist, rhs: Artist) -> Bool {
