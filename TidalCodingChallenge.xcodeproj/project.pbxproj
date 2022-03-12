@@ -14,6 +14,20 @@
 		4C42C07A27DCC71800E87EB3 /* TidalCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C07927DCC71800E87EB3 /* TidalCodingChallengeTests.swift */; };
 		4C42C08427DCC71800E87EB3 /* TidalCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C08327DCC71800E87EB3 /* TidalCodingChallengeUITests.swift */; };
 		4C42C08627DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C08527DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift */; };
+		4C42C09427DCCCF300E87EB3 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09327DCCCF300E87EB3 /* Track.swift */; };
+		4C42C09627DCCD0F00E87EB3 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09527DCCD0F00E87EB3 /* Album.swift */; };
+		4C42C09827DCCD2400E87EB3 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09727DCCD2400E87EB3 /* Artist.swift */; };
+		4C42C09A27DCCD4300E87EB3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09927DCCD4300E87EB3 /* StringExtensions.swift */; };
+		4C42C09C27DCCE1D00E87EB3 /* SearchedArtistResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09B27DCCE1D00E87EB3 /* SearchedArtistResult.swift */; };
+		4C42C09E27DCCE6600E87EB3 /* SearchedTrackResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09D27DCCE6600E87EB3 /* SearchedTrackResult.swift */; };
+		4C42C0A027DCCE6D00E87EB3 /* SearchedAlbumResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C09F27DCCE6D00E87EB3 /* SearchedAlbumResult.swift */; };
+		4C42C0A727DCCF2900E87EB3 /* testArtistSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C42C0A427DCCF2900E87EB3 /* testArtistSearch.json */; };
+		4C42C0A827DCCF2900E87EB3 /* testAlbumSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C42C0A527DCCF2900E87EB3 /* testAlbumSearch.json */; };
+		4C42C0A927DCCF2900E87EB3 /* testTrackSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C42C0A627DCCF2900E87EB3 /* testTrackSearch.json */; };
+		4C42C0AC27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0AB27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift */; };
+		4C42C0AE27DCCF8600E87EB3 /* SearchedArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0AD27DCCF8600E87EB3 /* SearchedArtistTests.swift */; };
+		4C42C0B227DCCFDD00E87EB3 /* SearchedAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0B127DCCFDD00E87EB3 /* SearchedAlbumTests.swift */; };
+		4C42C0B427DCCFE700E87EB3 /* SearchedTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42C0B327DCCFE700E87EB3 /* SearchedTrackTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,20 @@
 		4C42C07F27DCC71800E87EB3 /* TidalCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TidalCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C42C08327DCC71800E87EB3 /* TidalCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		4C42C08527DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TidalCodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C42C09327DCCCF300E87EB3 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		4C42C09527DCCD0F00E87EB3 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4C42C09727DCCD2400E87EB3 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		4C42C09927DCCD4300E87EB3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		4C42C09B27DCCE1D00E87EB3 /* SearchedArtistResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedArtistResult.swift; sourceTree = "<group>"; };
+		4C42C09D27DCCE6600E87EB3 /* SearchedTrackResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTrackResult.swift; sourceTree = "<group>"; };
+		4C42C09F27DCCE6D00E87EB3 /* SearchedAlbumResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedAlbumResult.swift; sourceTree = "<group>"; };
+		4C42C0A427DCCF2900E87EB3 /* testArtistSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testArtistSearch.json; sourceTree = "<group>"; };
+		4C42C0A527DCCF2900E87EB3 /* testAlbumSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testAlbumSearch.json; sourceTree = "<group>"; };
+		4C42C0A627DCCF2900E87EB3 /* testTrackSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testTrackSearch.json; sourceTree = "<group>"; };
+		4C42C0AB27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
+		4C42C0AD27DCCF8600E87EB3 /* SearchedArtistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedArtistTests.swift; sourceTree = "<group>"; };
+		4C42C0B127DCCFDD00E87EB3 /* SearchedAlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedAlbumTests.swift; sourceTree = "<group>"; };
+		4C42C0B327DCCFE700E87EB3 /* SearchedTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTrackTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +122,11 @@
 		4C42C06727DCC71700E87EB3 /* TidalCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				4C42C06827DCC71700E87EB3 /* TidalCodingChallengeApp.swift */,
+				4C42C0A327DCCEFB00E87EB3 /* Setup */,
 				4C42C06A27DCC71700E87EB3 /* ContentView.swift */,
-				4C42C06C27DCC71800E87EB3 /* Assets.xcassets */,
-				4C42C06E27DCC71800E87EB3 /* Preview Content */,
+				4C42C0A127DCCEB000E87EB3 /* Extensions */,
+				4C42C09227DCCCE700E87EB3 /* Models */,
+				4C42C0A227DCCEE600E87EB3 /* Resources */,
 			);
 			path = TidalCodingChallenge;
 			sourceTree = "<group>";
@@ -114,6 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				4C42C07927DCC71800E87EB3 /* TidalCodingChallengeTests.swift */,
+				4C42C0B027DCCFA300E87EB3 /* Extensions */,
+				4C42C0AF27DCCF8B00E87EB3 /* Models */,
+				4C42C0AA27DCCF3D00E87EB3 /* Resources */,
 			);
 			path = TidalCodingChallengeTests;
 			sourceTree = "<group>";
@@ -125,6 +157,72 @@
 				4C42C08527DCC71800E87EB3 /* TidalCodingChallengeUITestsLaunchTests.swift */,
 			);
 			path = TidalCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		4C42C09227DCCCE700E87EB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C09B27DCCE1D00E87EB3 /* SearchedArtistResult.swift */,
+				4C42C09F27DCCE6D00E87EB3 /* SearchedAlbumResult.swift */,
+				4C42C09D27DCCE6600E87EB3 /* SearchedTrackResult.swift */,
+				4C42C09327DCCCF300E87EB3 /* Track.swift */,
+				4C42C09527DCCD0F00E87EB3 /* Album.swift */,
+				4C42C09727DCCD2400E87EB3 /* Artist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C42C0A127DCCEB000E87EB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C09927DCCD4300E87EB3 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4C42C0A227DCCEE600E87EB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C06C27DCC71800E87EB3 /* Assets.xcassets */,
+				4C42C06E27DCC71800E87EB3 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C42C0A327DCCEFB00E87EB3 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C06827DCC71700E87EB3 /* TidalCodingChallengeApp.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		4C42C0AA27DCCF3D00E87EB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0A527DCCF2900E87EB3 /* testAlbumSearch.json */,
+				4C42C0A427DCCF2900E87EB3 /* testArtistSearch.json */,
+				4C42C0A627DCCF2900E87EB3 /* testTrackSearch.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C42C0AF27DCCF8B00E87EB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0AD27DCCF8600E87EB3 /* SearchedArtistTests.swift */,
+				4C42C0B127DCCFDD00E87EB3 /* SearchedAlbumTests.swift */,
+				4C42C0B327DCCFE700E87EB3 /* SearchedTrackTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C42C0B027DCCFA300E87EB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4C42C0AB27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C42C0A727DCCF2900E87EB3 /* testArtistSearch.json in Resources */,
+				4C42C0A927DCCF2900E87EB3 /* testTrackSearch.json in Resources */,
+				4C42C0A827DCCF2900E87EB3 /* testAlbumSearch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C42C09A27DCCD4300E87EB3 /* StringExtensions.swift in Sources */,
+				4C42C09C27DCCE1D00E87EB3 /* SearchedArtistResult.swift in Sources */,
 				4C42C06B27DCC71700E87EB3 /* ContentView.swift in Sources */,
 				4C42C06927DCC71700E87EB3 /* TidalCodingChallengeApp.swift in Sources */,
+				4C42C09427DCCCF300E87EB3 /* Track.swift in Sources */,
+				4C42C09827DCCD2400E87EB3 /* Artist.swift in Sources */,
+				4C42C0A027DCCE6D00E87EB3 /* SearchedAlbumResult.swift in Sources */,
+				4C42C09627DCCD0F00E87EB3 /* Album.swift in Sources */,
+				4C42C09E27DCCE6600E87EB3 /* SearchedTrackResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C42C0AC27DCCF5B00E87EB3 /* XCTestCaseExtensions.swift in Sources */,
+				4C42C0AE27DCCF8600E87EB3 /* SearchedArtistTests.swift in Sources */,
+				4C42C0B427DCCFE700E87EB3 /* SearchedTrackTests.swift in Sources */,
+				4C42C0B227DCCFDD00E87EB3 /* SearchedAlbumTests.swift in Sources */,
 				4C42C07A27DCC71800E87EB3 /* TidalCodingChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +530,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TidalCodingChallenge/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TidalCodingChallenge/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 38DEJUL48H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -447,7 +559,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TidalCodingChallenge/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TidalCodingChallenge/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 38DEJUL48H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
