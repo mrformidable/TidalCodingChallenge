@@ -50,7 +50,7 @@ class SearchCloudServiceTests: XCTestCase {
   func testCorrectlyGetsDataWhenGettingAlbums() async throws {
     // Given
     let album = Album(id: 12312, title: "Test Album", imageURL: URL(string: "www.testurl"), thumbnailURL: URL(string: "www.testurl"), usesExplicitLyrics: false, releaseDate: Date())
-    let searchedAlbumResult = SearchedAlbumResult(albums: [album], total: 1, next: "")
+    let searchedAlbumResult = SearchedAlbumResult(albums: [album], total: 1)
     let searchedAlbumResultData = try XCTUnwrap(JSONEncoder().encode(searchedAlbumResult))
 
     sessionMock.data = searchedAlbumResultData

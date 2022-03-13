@@ -19,14 +19,28 @@ struct SearchedAlbumView: View {
   @StateObject private var viewModel = SearchedAlbumViewModel()
   
   var body: some View {
-    ScrollView {
-      LazyVGrid(columns: columns, spacing: 30) {
-        ForEach(viewModel.albums, id: \.id) { album in
-          SearchedAlbumGridView(album: album, artist: artist)
+    Group {
+      switch viewModel.state {
+      case .loading:
+        ProgressView()
+          .padding(.top, 50)
+          .progressViewStyle(CircularProgressViewStyle(tint: .white))
+          .scaleEffect(2)
+      case .emptyFetchResults:
+        SearchEmptyResultsView(message: "Oops no albums found for \(artist.name)")
+      case .fetchedResults(albums: let albums):
+        ScrollView {
+          LazyVGrid(columns: columns, spacing: 30) {
+            ForEach(albums, id: \.id) { album in
+              NavigationLink(destination: SearchedTracksView(album: album, artist: artist)) {
+                SearchedAlbumGridView(album: album, artist: artist)
+              }
+            }
+          }
+          .padding(.top, 20)
+          .padding(.horizontal)
         }
       }
-      .padding(.top, 20)
-      .padding(.horizontal)
     }
     .navigationTitle("\(artist.name.capitalized)'s Albums")
     .navigationBarTitleDisplayMode(.inline)
