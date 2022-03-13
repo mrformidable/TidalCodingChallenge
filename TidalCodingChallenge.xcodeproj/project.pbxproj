@@ -58,6 +58,7 @@
 		4C8EFF8C27DE1F520085AFFA /* SearchedTrackHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF8B27DE1F520085AFFA /* SearchedTrackHeaderView.swift */; };
 		4C8EFF8E27DE371A0085AFFA /* TrackPlaylistOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF8D27DE371A0085AFFA /* TrackPlaylistOptionsView.swift */; };
 		4C8EFF9027DE45790085AFFA /* SearchedTracksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8EFF8F27DE45790085AFFA /* SearchedTracksViewModelTests.swift */; };
+		4C8EFF9227DE64BB0085AFFA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4C8EFF9127DE64BB0085AFFA /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		4C8EFF8B27DE1F520085AFFA /* SearchedTrackHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTrackHeaderView.swift; sourceTree = "<group>"; };
 		4C8EFF8D27DE371A0085AFFA /* TrackPlaylistOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackPlaylistOptionsView.swift; sourceTree = "<group>"; };
 		4C8EFF8F27DE45790085AFFA /* SearchedTracksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTracksViewModelTests.swift; sourceTree = "<group>"; };
+		4C8EFF9127DE64BB0085AFFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				4C8EFF6D27DD2CD90085AFFA /* Info.plist */,
+				4C8EFF9127DE64BB0085AFFA /* README.md */,
 				4C42C0A327DCCEFB00E87EB3 /* Setup */,
 				4C8EFF5727DD1CDD0085AFFA /* Views */,
 				4C8EFF5A27DD1D0E0085AFFA /* ViewModels */,
@@ -517,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8EFF9227DE64BB0085AFFA /* README.md in Resources */,
 				4C42C07027DCC71800E87EB3 /* Preview Assets.xcassets in Resources */,
 				4C42C06D27DCC71800E87EB3 /* Assets.xcassets in Resources */,
 			);
@@ -676,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -731,7 +735,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -758,6 +762,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -788,6 +793,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
