@@ -28,3 +28,9 @@ extension XCTestCase {
     return try? Data(contentsOf: filePath)
   }
 }
+
+extension TimeInterval {
+  static var expectationsTimeout: TimeInterval {
+    2
+  }
+}

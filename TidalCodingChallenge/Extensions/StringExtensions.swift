@@ -13,6 +13,8 @@ extension String {
   }
   
   func toAlbumReleaseDate() -> Date {
-    DateFormatter().date(from: self) ?? Date()
+    let formatter = DateFormatter()
+    formatter.dateFormat = "YYYY-MM-dd"
+    return formatter.date(from: self) ?? Date()
   }
 }

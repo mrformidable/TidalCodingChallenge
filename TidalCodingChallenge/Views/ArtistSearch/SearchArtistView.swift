@@ -23,7 +23,9 @@ struct SearchArtistView: View {
           SearchEmptyResultsView(message: "Oops an error occurred, please try again.")
         case .fetchedResults(artists: let artists):
           List(artists, id: \.id) { artist in
-            SearchArtistCellView(artist: artist)
+            NavigationLink(destination: SearchedAlbumView(artist: artist)) {
+              SearchArtistCellView(artist: artist)
+            }
           }
           .listStyle(.plain)
         }
