@@ -46,6 +46,6 @@ import Combine
       }
     }.store(in: &subscriptions)
     
-    wait(for: [searchExpectation], timeout: 2.5)
+    wait(for: [searchExpectation], timeout: .expectationsTimeout)
   }
 }
