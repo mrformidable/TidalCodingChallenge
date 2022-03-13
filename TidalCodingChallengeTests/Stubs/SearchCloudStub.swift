@@ -15,7 +15,7 @@ final class SearchCloudStub: SearchCloudStore {
   var tracks: [Track] = []
 
   func getAlbums(using albumId: String) async throws -> Result<SearchedAlbumResult, Error> {
-    .success(SearchedAlbumResult(albums: albums, total: 10, next: ""))
+    .success(SearchedAlbumResult(albums: albums, total: 10))
   }
   
   func getTracks(using artistId: String) async throws -> Result<SearchedTrackResult, Error> {

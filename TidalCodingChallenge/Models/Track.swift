@@ -52,3 +52,9 @@ public struct Track: Codable, Equatable {
     return lhs.id == rhs.id
   }
 }
+
+extension Track {
+  static var mock: Track {
+    Track(id: 21312, title: "Album", duration: 300, position: 1, usesExplicitLyrics: true)
+  }
+}

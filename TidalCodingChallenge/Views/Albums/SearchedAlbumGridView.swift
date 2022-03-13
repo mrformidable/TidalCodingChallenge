@@ -22,29 +22,31 @@ struct SearchedAlbumGridView: View {
       
       Text(album.title)
         .font(.system(size: 17, weight: .bold))
+        .foregroundColor(.white)
         .lineLimit(1)
         .padding(.top, 5)
       
       Text(artist.name.capitalized)
-        .font(.system(size: 15, weight: .semibold))
+        .font(.system(size: 15, weight: .bold))
         .lineLimit(1)
         .foregroundColor(Color.gray)
       
       HStack {
         Text(album.releaseDate.getAlbumReleaseYear())
-          .font(.system(size: 10, weight: .semibold))
+          .font(.system(size: 10, weight: .bold))
           .foregroundColor(Color.gray)
         
         if album.usesExplicitLyrics {
           Text("EXPLICIT")
-            .font(.system(size: 8, weight: .semibold))
+            .font(.system(size: 8, weight: .bold))
+            .foregroundColor(.white)
             .padding(.all, 3)
             .background(Color(UIColor.darkGray))
             .cornerRadius(5)
         }
         
         Text("MASTER")
-          .font(.system(size: 8, weight: .semibold))
+          .font(.system(size: 8, weight: .bold))
           .foregroundColor(Color.orange)
           .padding(.all, 3)
           .background(Color(UIColor.darkGray))

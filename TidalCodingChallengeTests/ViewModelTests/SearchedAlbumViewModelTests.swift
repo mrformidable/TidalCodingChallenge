@@ -34,19 +34,24 @@ class SearchedAlbumViewModelTests: XCTestCase {
     // Given
     let albums = [Album.mock]
     searchCloudStub.albums = albums
-    
+
     let expectation = XCTestExpectation(description: "album network data fetch")
-    
+
     // When
     await sut.getAlbums(using: "artistId", shouldCache: false)
     
-    await sut.$albums.sink { fetchedAlbums in
+    await sut.$state.sink { state in
       expectation.fulfill()
       
-      // Then
-      XCTAssertTrue(self.searchCacheStub.cachedAlbums.isEmpty)
-      XCTAssertTrue(!self.searchCloudStub.albums.isEmpty)
-      XCTAssertEqual(albums, fetchedAlbums)
+      switch state {
+      case .fetchedResults(albums: let fetchedAlbums):
+        // Then
+        XCTAssertTrue(self.searchCacheStub.cachedAlbums.isEmpty)
+        XCTAssertTrue(!self.searchCloudStub.albums.isEmpty)
+        XCTAssertEqual(albums, fetchedAlbums)
+      default:
+        break
+      }
     }.store(in: &subscriptions)
     
     wait(for: [expectation], timeout: .expectationsTimeout)
@@ -62,13 +67,18 @@ class SearchedAlbumViewModelTests: XCTestCase {
     // When
     await sut.getAlbums(using: "artistId")
     
-    await sut.$albums.sink { fetchedAlbums in
+    await sut.$state.sink { state in
       expectation.fulfill()
       
-      // Then
-      XCTAssertTrue(self.searchCloudStub.albums.isEmpty)
-      XCTAssertTrue(!self.searchCacheStub.cachedAlbums.isEmpty)
-      XCTAssertEqual(albums, fetchedAlbums)
+      switch state {
+      case .fetchedResults(albums: let fetchedAlbums):
+        // Then
+        XCTAssertTrue(self.searchCloudStub.albums.isEmpty)
+        XCTAssertTrue(!self.searchCacheStub.cachedAlbums.isEmpty)
+        XCTAssertEqual(albums, fetchedAlbums)
+      default:
+        break
+      }
     }.store(in: &subscriptions)
     
     wait(for: [expectation], timeout: .expectationsTimeout)
@@ -80,17 +90,22 @@ class SearchedAlbumViewModelTests: XCTestCase {
     searchCloudStub.albums = albums
     
     let expectation = XCTestExpectation(description: "album network data fetch")
-    
+
     // When
     await sut.getAlbums(using: "artistId", shouldCache: true)
     
-    await sut.$albums.sink { fetchedAlbums in
+    await sut.$state.sink { state in
       expectation.fulfill()
       
-      // Then
-      XCTAssertTrue(!self.searchCacheStub.cachedAlbums.isEmpty)
-      XCTAssertTrue(!self.searchCloudStub.albums.isEmpty)
-      XCTAssertEqual(albums, fetchedAlbums)
+      switch state {
+      case .fetchedResults(albums: let fetchedAlbums):
+        // Then
+        XCTAssertTrue(!self.searchCacheStub.cachedAlbums.isEmpty)
+        XCTAssertTrue(!self.searchCloudStub.albums.isEmpty)
+        XCTAssertEqual(albums, fetchedAlbums)
+      default:
+        break
+      }
     }.store(in: &subscriptions)
     
     wait(for: [expectation], timeout: .expectationsTimeout)
