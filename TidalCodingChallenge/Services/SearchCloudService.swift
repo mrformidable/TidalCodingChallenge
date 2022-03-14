@@ -62,11 +62,11 @@ final class SearchCloudService: SearchCloudStore {
           return
         }
         
-        guard let searchedTrackResult = try? JSONDecoder().decode(T.self, from: data) else {
+        guard let decodedData = try? JSONDecoder().decode(T.self, from: data) else {
           continuation.resume(returning: .failure(NetworkError.decodingFailure))
           return
         }
-        continuation.resume(returning: .success(searchedTrackResult))
+        continuation.resume(returning: .success(decodedData))
       }
     })
   }
