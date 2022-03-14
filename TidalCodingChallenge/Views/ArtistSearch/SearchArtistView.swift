@@ -30,9 +30,10 @@ struct SearchArtistView: View {
           .listStyle(.plain)
         }
       }
-      .searchable(text: $viewModel.searchQuery, prompt: "Search")
       .navigationTitle("Artists")
+      .navigationBarTitleDisplayMode(.large)
     }
+    .searchable(text: $viewModel.searchQuery, placement:  .navigationBarDrawer(displayMode: .always), prompt: "Search")
   }
 }
 
